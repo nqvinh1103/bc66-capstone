@@ -396,3 +396,184 @@ button.demo-theme:hover {
 button:hover {
   background-color: #e2e6ea;
 }
+
+/* START FAQ */
+.header-faq {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.sub-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #dc4f72;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.header-faq h1 {
+  color: #2c3038;
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 700;
+}
+.header-faq p {
+  color: #5a5a5a;
+  font-size: 16px;
+  line-height: 22.5px;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+img.img-curve {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+img.img-curve:hover {
+  transform: translateY(-0.5rem);
+}
+.pl-md-5,
+.px-md-5 {
+  padding-left: 3rem !important;
+}
+
+/* .faq .faq-item ul {
+  list-style: none;
+  padding: 0;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.faq .faq-item ul li {
+  position: relative;
+  padding: 25px 50px 25px 20px;
+  border: 1px solid #eee;
+  margin: 0 0 15px 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #fff; */
+/* animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-play-state: running;
+  animation-name: flipdown;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal; */
+/* }
+.faq .faq-item ul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.faq .faq-item ul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+.faq .faq-item ul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.faq .faq-item ul li:nth-of-type(4) {
+  animation-delay: 1.25s;
+}
+.faq .faq-item ul li:nth-of-type(5) {
+  animation-delay: 1.5s;
+}
+.faq .faq-item ul li:nth-of-type(6) {
+  animation-delay: 1.75s;
+}
+
+.faq .faq-item ul li input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+.faq .faq-item ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 25px;
+  top: 16px;
+}
+
+.faq .faq-item ul li input[type="checkbox"]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+} */
+
+/* .w3l-faq-block .w3l-faq ul li i::before {
+  transform: translate(-2px, 0) rotate(45deg);
+} */
+
+/* .faq .faq-item ul li i::before {
+  content: "";
+  position: absolute;
+  background-color: #2c3038;
+  width: 3px;
+  height: 9px;
+}
+
+.faq .faq-item ul li i::before {
+  transition-behavior: normal;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-property: all;
+}
+
+.faq .faq-item ul li input[type="checkbox"]:checked ~ i::after {
+  transform: translate(-2px, 0) rotate(-45deg);
+} */
+
+/* .w3l-faq-block .w3l-faq ul li i::after {
+  transform: translate(2px, 0) rotate(-45deg);
+} */
+
+/* .faq .faq-item ul li i::after {
+  content: "";
+  position: absolute;
+  background-color: #2c3038;
+  width: 3px;
+  height: 9px;
+}
+
+.faq .faq-item ul li i::after {
+  transition: all 0.25s ease-in-out;
+  transition-behavior: normal;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-property: all;
+}
+
+.faq .faq-item h2 {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: normal;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  color: #2c3038;
+} */
