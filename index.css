@@ -8,6 +8,7 @@
 #switchButton {
   background: none;
   border: none;
+  margin-left: 10px;
 }
 #switchButton .fa-sun {
   display: none;
@@ -140,10 +141,10 @@ header.main-header {
   margin: 0 8px;
   font-weight: 600;
 }
-#navbarMenu .nav-item .nav-link.active {
+#navbarMenu .navbar-nav .nav-link.active {
   color: #dc4f72;
 }
-#navbarMenu .nav-item:hover .nav-link {
+#navbarMenu .navbar-nav .nav-link:hover {
   color: #dc4f72;
 }
 #navbarMenu .nav-link {
@@ -634,7 +635,8 @@ button.navbar-toggler.collapsed .icon-expand {
     right: 50px;
     top: 25px;
   }
-  #navbarMenu .nav-link:hover::before {
-    justify-content: center;
+  .navbar-expand-lg .navbar-nav .nav-link {
+    display: inline-block;
+    padding: 8px 0;
   }
 }
