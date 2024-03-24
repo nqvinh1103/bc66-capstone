@@ -6,7 +6,8 @@
   background-color: white;
 }
 #switchButton {
-  background-color: white;
+  background: none;
+  border: none;
 }
 #switchButton .fa-sun {
   display: none;
@@ -95,7 +96,7 @@
 .dark .tool h3 {
   color: #eee;
 }
-.dark .tool .tool__title p:last-child {
+.dark .tool .tool__title .special {
   color: #b7b7b7;
 }
 .dark .tool__block {
@@ -103,6 +104,9 @@
 }
 .dark .tool__block p {
   color: #b7b7b7;
+}
+.dark .tool__block:hover {
+  background: #131617;
 }
 .dark .about {
   background: #191c1d;
@@ -131,13 +135,6 @@ header.main-header {
   display: grid;
   align-items: center;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
-}
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
 }
 #navbarMenu .nav-item {
   margin: 0 8px;
@@ -179,7 +176,7 @@ header.main-header {
 a.dropdown-item {
   font-weight: 400;
   font-size: 16px;
-  color: var(--title-color);
+  color: #2c3038;
   position: relative;
 }
 .dropdown-item {
@@ -202,6 +199,15 @@ a.dropdown-item {
   letter-spacing: -1px;
   font-weight: 700;
 }
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.navbar-toggler {
+  border: none;
+}
 button.navbar-toggler .icon-close {
   display: block;
 }
@@ -218,7 +224,7 @@ button.navbar-toggler.collapsed .icon-expand {
   display: block;
 }
 .navbar-toggler-icon.fa {
-  line-height: 1.2em;
+  line-height: 1.2rem;
   color: #fff;
   line-height: 34px;
   background-color: #dc4f72;
@@ -226,8 +232,8 @@ button.navbar-toggler.collapsed .icon-expand {
 }
 .navbar-toggler-icon {
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  width: 35px;
+  height: 35px;
   vertical-align: middle;
   content: "";
   background: no-repeat center center;
@@ -266,10 +272,13 @@ button.navbar-toggler.collapsed .icon-expand {
   color: #dc4f72;
   border-color: #dc4f72;
 }
-.btn-outline-primary:hover {
+.demo-theme:hover {
   color: #fff;
   background-color: #dc4f72;
   border-color: #dc4f72;
+}
+.demo-theme:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.5);
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   transform: translateX(-50px);
@@ -349,6 +358,7 @@ button.navbar-toggler.collapsed .icon-expand {
   text-shadow: 0 1px 0 #fff;
   opacity: 0.5;
 }
+
 /* BANNER */
 .banner__content {
   background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
@@ -388,6 +398,9 @@ button.navbar-toggler.collapsed .icon-expand {
 .button:hover {
   background-color: #dc4f72;
   color: white;
+}
+.button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.5);
 }
 /* TOOL */
 .tool__title {
@@ -466,6 +479,9 @@ button.navbar-toggler.collapsed .icon-expand {
 .btn1:hover {
   background: #d62f58;
 }
+.btn1:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.5);
+}
 .about__photo img {
   border-radius: 6px;
   transition: all 0.5s;
@@ -528,7 +544,7 @@ button.navbar-toggler.collapsed .icon-expand {
   color: #eee;
   line-height: 24.5px;
 }
-.index button {
+.index .btn2 {
   padding: 0 30px;
   color: #2c3038;
   display: inline-block;
@@ -542,8 +558,14 @@ button.navbar-toggler.collapsed .icon-expand {
   border-radius: 4px;
   transition: 0.5s;
 }
-button:hover {
+.btn2:hover {
   background-color: #e2e6ea;
+}
+.btn2:focus {
+  box-shadow: 0 0 0.2rem rgba(216, 217, 219, 0.5);
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
 }
 /* RESPONSIVE */
 @media screen and (min-width: 1200px) {
@@ -580,7 +602,10 @@ button:hover {
     margin-left: auto;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
+  .navbar-toggler {
+    padding: 0 !important;
+  }
   .navbar-toggler-icon.fa {
     color: #fff;
     line-height: 34px;
@@ -590,14 +615,26 @@ button:hover {
   .banner {
     margin-top: 70px;
   }
-}
-@media (max-width: 992px) {
-  .demo {
+  .HeaderButton {
+    text-align: center;
+    padding: 10px 0;
+  }
+  header.main-header {
+    height: auto;
+    padding: 15px 0;
+  }
+  .navbar-nav {
     text-align: center;
   }
-  .search-right {
+  .search {
     text-align: center;
-    margin-bottom: 10px;
-    display: block;
+  }
+  .mobile-position {
+    position: absolute;
+    right: 50px;
+    top: 25px;
+  }
+  #navbarMenu .nav-link:hover::before {
+    justify-content: center;
   }
 }
