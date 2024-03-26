@@ -913,3 +913,76 @@ body a:hover {
   border-radius: 50%;
   text-align: center;
 }
+
+/* RESPONSIVE */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar-toggler {
+    padding: 0 !important;
+  }
+  .navbar-toggler-icon.fa {
+    color: #fff;
+    line-height: 34px;
+    background-color: #dc4f72;
+    border-radius: 5px;
+  }
+  .banner {
+    margin-top: 70px;
+  }
+  .HeaderButton {
+    text-align: center;
+    padding: 10px 0;
+  }
+  header.main-header {
+    height: auto;
+    padding: 15px 0;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .search {
+    text-align: center;
+  }
+  .mobile-position {
+    position: absolute;
+    right: 50px;
+    top: 25px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    display: inline-block;
+    padding: 8px 0;
+  }
+}
