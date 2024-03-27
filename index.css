@@ -65,6 +65,9 @@
 .dark #navbarMenu .HeaderButton .demo-theme {
   background: #000;
 }
+.dark #navbarMenu .HeaderButton .demo-theme:hover {
+  background: #dc4f72;
+}
 .dark .banner__content {
   background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.92)),
     url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/banner.jpg);
@@ -129,7 +132,7 @@
   color: #b7b7b7;
 }
 .dark .faq {
-  background: #000;
+  background: #191c1d;
 }
 .dark .faq h1 {
   color: #eee;
@@ -142,12 +145,14 @@
   border: none;
   color: #eee;
 }
+.dark .faq .accordion-item {
+  border: 1px solid #333;
+}
 .dark .faq .accordion-body {
   background: #131617;
-  border-top: none;
 }
 .dark .faq .accordion-button::after {
-  background-color: #eee;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 .dark .projects {
   background: #000;
@@ -511,6 +516,8 @@ button.navbar-toggler.collapsed .icon-expand {
 }
 /* TOOL */
 .tool__title {
+  max-width: 750px;
+  margin: 0 auto;
   text-align: center;
 }
 .tool .tool__title p:first-child {
@@ -670,6 +677,9 @@ button.navbar-toggler.collapsed .icon-expand {
 }
 
 /* START FAQ */
+.faq {
+  background-color: #f7f9fc;
+}
 .header-faq {
   max-width: 750px;
   margin: 0 auto;
@@ -731,15 +741,16 @@ img.img-curve:hover {
 .accordion-item {
   margin: 30px;
 }
-
 .accordion-button {
   height: 70px;
   font-size: 20px;
 }
-
 .accordion-button:hover {
   border-color: white;
   background-color: white;
+}
+.faq .accordion-button:focus {
+  box-shadow: none;
 }
 
 /* PROJECTS */
@@ -1111,6 +1122,9 @@ body a:hover {
   border-radius: 50%;
   text-align: center;
 }
+.footer ul.social li a:hover {
+  color: #dc4f72;
+}
 
 .btn2:focus {
   box-shadow: 0 0 0.2rem rgba(216, 217, 219, 0.5);
@@ -1211,5 +1225,51 @@ body a:hover {
     padding: 8px 0;
   }
 }
-/* @media screen and (max-width: 766px) {
-} */
+@media screen and (max-width: 568px) {
+  .banner__content h3 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 667px) {
+  .tool .tool__title h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .index p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .testimonials .testimonials__message {
+    width: 100%;
+  }
+  .header-section h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .index h3 {
+    font-size: 26px;
+  }
+  .testimonials .slider-info {
+    display: block !important;
+    text-align: center;
+  }
+  .testimonials .testimonials__message {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .projects-bottom .nav-pills {
+    flex-direction: column;
+  }
+  .projects-bottom .nav-pills .nav-item {
+    width: 100%;
+    border: 1px solid #b7b7b7;
+  }
+  .projects-bottom .nav-tabList .nav-tabItem button {
+    text-align: left;
+    font-size: 20px;
+  }
+}
