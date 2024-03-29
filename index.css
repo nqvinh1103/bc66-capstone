@@ -1261,15 +1261,33 @@ body a:hover {
   }
 }
 @media screen and (max-width: 768px) {
-  .projects-bottom .nav-pills {
-    flex-direction: column;
+  .projects-bottom {
+    display: none;
   }
-  .projects-bottom .nav-pills .nav-item {
-    width: 100%;
+  .project-mobile .accordion-header-mobile {
+    border: 1px solid #b7b7b7;
+    margin: 0;
+  }
+  .project-mobile .accordion-body-mobile {
     border: 1px solid #b7b7b7;
   }
-  .projects-bottom .nav-tabList .nav-tabItem button {
-    text-align: left;
-    font-size: 20px;
+  .project-mobile .title {
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: 700;
+  }
+  .project-mobile img {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .accordion-header-mobile .accordion-button {
+    margin-left: 20px;
+    height: 50px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 767px) {
+  .project-mobile {
+    display: none;
   }
 }
