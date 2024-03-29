@@ -238,6 +238,18 @@
 .dark .footer ul.social li a {
   color: #eee;
 }
+
+.dark .project-mobile button {
+  color: #eee;
+}
+
+.dark .project-mobile button:hover {
+  background: #000;
+}
+
+.dark .project-mobile .title {
+  color: #eee;
+}
 /* HEADER */
 header.main-header {
   background-color: #fff;
@@ -924,6 +936,27 @@ img.img-curve:hover {
   text-align: left;
 }
 
+.project-mobile a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  height: 40px;
+  width: 120px;
+}
+
+.project-mobile .tabContent-mobile p {
+  color: #5a5a5a;
+}
+
+.project-mobile button:focus {
+  border-bottom: 3px solid #dc4f72;
+  color: #dc4f72;
+}
+
+.project-mobile button {
+  padding-left: 20px;
+}
+
 /* START INDEX6 */
 .py-5 {
   padding-bottom: 3rem !important;
@@ -1281,7 +1314,6 @@ body a:hover {
     margin-bottom: 20px;
   }
   .accordion-header-mobile .accordion-button {
-    margin-left: 20px;
     height: 50px;
     font-weight: 600;
   }
